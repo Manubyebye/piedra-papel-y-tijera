@@ -3,7 +3,7 @@ function ageInDays(){
     var  Nacimiento  =  prompt ('what year were your born?....');
       var birthyear = (1985 - Nacimiento)*365;
        var h1 =document.createElement('h1');
-       var textanswer = document.createTextNode("you are" + " " +  Nacimiento +" "+ "yeras old");
+       var textanswer = document.createTextNode("you are" + " " +  Nacimiento +" "+ "years old");
        h1.setAttribute("id","ageInDays");
        h1.appendChild(textanswer);
        document.getElementById("flex-box-result").appendChild(h1);
