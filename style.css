@@ -1,6 +1,6 @@
 body{
     background-image:url("https://image.winudf.com/v2/image/Y29tLndhbGxwYXBlci5nb2t1c3VwZXJzYWl5YW5oZF9zY3JlZW5fMl8xNTE4NjY3Mjc2XzA5OQ/screen-2.jpg?fakeurl=1&type=.jpg");
-    background-repeat:round;
+    background-size: cover;
      background-attachment: scroll;
 
 }
