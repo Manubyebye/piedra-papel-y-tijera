@@ -38,3 +38,11 @@ align-items: center;
     justify-content: space-around;
     align-items: center;   
 }
+
+.flex-box-rps img:hover{
+    box-shadow: 8px 10px 50px blue(37,50,233,1);
+    border: 3px solid  black;
+    justify-content: space-around;
+
+}
+
