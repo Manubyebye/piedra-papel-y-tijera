@@ -1,3 +1,11 @@
+body{
+    background-image:url("https://image.winudf.com/v2/image/Y29tLndhbGxwYXBlci5nb2t1c3VwZXJzYWl5YW5oZF9zY3JlZW5fMl8xNTE4NjY3Mjc2XzA5OQ/screen-2.jpg?fakeurl=1&type=.jpg");
+    background-repeat:round;
+     background-attachment: scroll;
+
+}
+
+
 .container1 {
     border:1px solid saddlebrown;
 
@@ -44,5 +52,21 @@ align-items: center;
     border: 3px solid  black;
     justify-content: space-around;
 
+}
+
+.container3 {
+    padding: 10px;
+  
+
+}
+
+.flex-box-container3 {
+    display:flex;
+    border: 1px solid  black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;   
 }
 
