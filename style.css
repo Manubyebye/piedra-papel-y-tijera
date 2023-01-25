@@ -1,5 +1,5 @@
 body{
-    background-image:url("https://image.winudf.com/v2/image/Y29tLndhbGxwYXBlci5nb2t1c3VwZXJzYWl5YW5oZF9zY3JlZW5fMl8xNTE4NjY3Mjc2XzA5OQ/screen-2.jpg?fakeurl=1&type=.jpg");
+    background-image:url("https://img.freepik.com/premium-photo/abandoned-towns-day_141465-6.jpg?w=740");
     background-size: cover;
      background-attachment: scroll;
 
@@ -33,7 +33,8 @@ align-items: center;
 
 .container2 {
     padding: 10px;
-  
+    border:1px solid saddlebrown;
+
 
 }
 
@@ -56,17 +57,14 @@ align-items: center;
 
 .container3 {
     padding: 10px;
-  
+
 
 }
 
 .flex-box-container3 {
     display:flex;
     border: 1px solid  black;
-    padding: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;   
+    justify-content:center;
+    align-items:baseline;   
 }
 

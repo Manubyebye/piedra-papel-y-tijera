@@ -34,11 +34,10 @@ result=decideWiner(humanchoice, botchoice); //[0,1]  human lost bot won
 console.log(result);
 
 message =finalmessage(result); //{"message", "you won",  "color","green"}
-console.log(message);
-
-//rpsFrontEnd(yourchoice.id, botchoice, message);
-
+console.log(message)
+rpsFrontEnd(yourchoice.id, botchoice, message);
 }
+
 
 function randtorpsint(){
     return Math.floor(Math.random()*3);
@@ -63,13 +62,13 @@ return  [yourscore, computerscore];
 
 }
 
-function finalmessage([yourscore, computerscore]){
+function finalmessage([yourscore, computerscore]) {
     if (yourscore ===0){
-        return {"message":"perdiste", "color":"red"};
+        return {'message':'perdiste', 'color':'red'};
     } else if (yourscore===0.5) {
-        return{"message":"empate",  "color":"orange"};
+        return{'message':'empate',  'color':'yellow'};
     } else {
-        return {"message":"Ganaste!", "color":"green"};
+        return {'message':'Ganaste!', 'color':'green'};
     }
 }
 
@@ -77,7 +76,7 @@ function  rpsFrontEnd (humanchoice, botchoice, finalmessage){
     var imagesDatabase={
         "random-rocks": document.getElementById("random-rocks").src,
         "paper-waterworld": document.getElementById("paper-waterworld").src,
-        "michael-scott": document.getElementById(" michael-scott").src
+        "michael-scott": document.getElementById("michael-scott").src,
     }
 
     document.getElementById("random-rocks").remove();
@@ -89,9 +88,9 @@ function  rpsFrontEnd (humanchoice, botchoice, finalmessage){
     var messageDiv=document.createElement("div");
 
     
-    humanDiv.innerHTML="<img src='"+ imagesDatabase[humanImageChoice]+ "'>"
-    messageDiv.innerHTML="<h1 style='color:"  +  finalmessage ['color']+ finalmessage['message'] + "</h1>"
-    botDiv.innerHTML="<img src='"+ imagesDatabase[botImagechoice]+ "'>"
+    humanDiv.innerHTML="<img src='"+ imagesDatabase[humanchoice]+ "' height=150 width=150;'>"
+    messageDiv.innerHTML="<h1 style='color: " + finalmessage ['color']+ "; font-size: 60px; padding: 30px; '>" + finalmessage['message'] + "</h1>"
+    botDiv.innerHTML="<img src='"+ imagesDatabase[botchoice]+ "' height=150 width=150;'>"
 
 
 
