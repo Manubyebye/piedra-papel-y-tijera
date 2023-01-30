@@ -14,6 +14,12 @@ function reset() {
 
 }
 
+
+function reset2() {
+    document.getElementById("flex-cat-gen").remove();
+
+}
+
 function generatecat(){
     var image = document.createElement("img");
     var div = document.getElementById("flex-cat-gen");
